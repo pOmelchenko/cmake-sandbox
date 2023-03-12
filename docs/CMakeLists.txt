@@ -1,5 +1,9 @@
+set(DOXYGEN_USE_MDFILE_AS_MAINPAGE "${PROJECT_SOURCE_DIR}/README.md")
 set(DOXYGEN_EXTRACT_ALL YES)
 set(DOXYGEN_BUILTIN_STL_SUPPORT YES)
 
-doxygen_add_docs(docs modern/lib.hpp "${CMAKE_CURRENT_SOURCE_DIR}/mainpage.md"
-                 WORKING_DIRECTORY "${PROJECT_SOURCE_DIR}/include")
+doxygen_add_docs(docs cmake_tests/hello.h
+        "${PROJECT_SOURCE_DIR}/README.md"
+        "${CMAKE_CURRENT_SOURCE_DIR}/mainpage.md"
+        WORKING_DIRECTORY "${PROJECT_SOURCE_DIR}/include"
+)

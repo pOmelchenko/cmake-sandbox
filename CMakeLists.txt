@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.24.0)
 
-project(cmake_tests
+project("CMake Tests"
     VERSION 0.1.0
     LANGUAGES C
 )
@@ -39,7 +39,7 @@ if(CMAKE_PROJECT_NAME STREQUAL PROJECT_NAME)
   if(Doxygen_FOUND)
     add_subdirectory(docs)
   else()
-    message(STATUS "Doxygen not found, not building docs")
+    message(STATUS "Doxygen not found, not building docs!")
   endif()
 endif()
 
