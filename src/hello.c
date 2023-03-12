@@ -1,4 +1,5 @@
-#include <stdio.h>
+
+#include <cmake_tests/hello.h>
 
 void say_hello(void)
 {

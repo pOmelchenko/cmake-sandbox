@@ -1,4 +1,4 @@
-#include <hello.h>
+#include <cmake_tests/hello.h>
 
 int main(void)
 {
